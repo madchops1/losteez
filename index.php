@@ -24,51 +24,48 @@
 	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	
 	<!-- RSS & PINGBACKS -->
-<link rel='stylesheet' id='bean-css'  href='wp-content/themes/base/assets/css/framework5152.css?ver=1.0' type='text/css' media='all' />
-<link rel='stylesheet' id='main-style-css'  href='wp-content/themes/base/stylead05.css?ver=1.4' type='text/css' media='all' />
-<link rel='stylesheet' id='mobile-css'  href='wp-content/themes/base/assets/css/mobile5152.css?ver=1.0' type='text/css' media='all' />
-<link rel='stylesheet' id='bean-pricingtables-style-css'  href='wp-content/plugins/bean-pricingtables/css/bean-pricingtables5152.css?ver=1.0' type='text/css' media='all' />
-<link rel='stylesheet' id='bean-shortcodes-style-css'  href='wp-content/plugins/bean-shortcodes/themes/Base/bean-shortcodes5152.css?ver=1.0' type='text/css' media='all' />
-<script type='text/javascript' src='wp-includes/js/jquery/jquery3e5a.js?ver=1.10.2'></script>
-<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min1576.js?ver=1.2.1'></script>
-<script type='text/javascript' src='wp-includes/js/comment-reply.minf43b.js?ver=3.7.1'></script>
+  <link rel='stylesheet' id='bean-css'  href='wp-content/themes/base/assets/css/framework5152.css?ver=1.0' type='text/css' media='all' />
+  <link rel='stylesheet' id='main-style-css'  href='wp-content/themes/base/stylead05.css?ver=1.4' type='text/css' media='all' />
+  <link rel='stylesheet' id='mobile-css'  href='wp-content/themes/base/assets/css/mobile5152.css?ver=1.0' type='text/css' media='all' />
+  <link rel='stylesheet' id='bean-pricingtables-style-css'  href='wp-content/plugins/bean-pricingtables/css/bean-pricingtables5152.css?ver=1.0' type='text/css' media='all' />
+  <link rel='stylesheet' id='bean-shortcodes-style-css'  href='wp-content/plugins/bean-shortcodes/themes/Base/bean-shortcodes5152.css?ver=1.0' type='text/css' media='all' />
+  <script type='text/javascript' src='wp-includes/js/jquery/jquery3e5a.js?ver=1.10.2'></script>
+  <script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min1576.js?ver=1.2.1'></script>
+  <script type='text/javascript' src='wp-includes/js/comment-reply.minf43b.js?ver=3.7.1'></script>
 
 	
-<style>
-/* ACCENT COLOR */	
-		
-</style>
+  <style>
+  /* ACCENT COLOR */	
+  		
+  </style>
 
-			<link rel="shortcut icon" href="wp-content/themes/base/assets/images/favicon.png"/> 
-			<link rel="apple-touch-icon-precomposed" href="wp-content/themes/base/assets/images/apple-touch-icon.png"/>
-			
-			
-		<style></style>		
-				
+	<link rel="shortcut icon" href="wp-content/themes/base/assets/images/favicon.png"/> 
+	<link rel="apple-touch-icon-precomposed" href="wp-content/themes/base/assets/images/apple-touch-icon.png"/>
+	
 		
-
+	<style></style>		
+			
 </head>
 
 <body class="home page page-id-13 page-template page-template-page-home-php animated BeanFadeIn unknown">
-
-					
  	<div id="responsive-nav" class="show-for-small">
- 		
- 		<div class="menu-footer-container"><form method="get" id="responsive-nav-form" action="http://demo.themebeans.com/base" class="custom"><select id="menu-footer" class="menu dropdown-menu"  onchange="if(this.options[this.selectedIndex].value != &#39;&#39;){window.top.location.href=this.options[this.selectedIndex].value}"><option value="" class="blank"> </option><option class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home mobile-menu-item-216 mobile-menu-item-depth-0" value="http://demo.themebeans.com/base">Home</option>
-<option class="menu-item menu-item-type-post_type menu-item-object-page mobile-menu-item-265 mobile-menu-item-depth-0" value="the-blogroll/index.html">Blog</option>
-<option class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children mobile-menu-item-217 mobile-menu-item-depth-0" value="shortcodes/index.html">Shortcodes</option>	<option class="menu-item menu-item-type-post_type menu-item-object-page mobile-menu-item-268 mobile-menu-item-depth-1" value="buttons/index.html">&nbsp;&nbsp;&nbsp;&nbsp;Buttons</option>
-	<option class="menu-item menu-item-type-post_type menu-item-object-page mobile-menu-item-267 mobile-menu-item-depth-1" value="feature-area-shortcodes/index.html">&nbsp;&nbsp;&nbsp;&nbsp;Feature Area Shortcodes</option>
-	<option class="menu-item menu-item-type-post_type menu-item-object-page mobile-menu-item-269 mobile-menu-item-depth-1" value="typography/index.html">&nbsp;&nbsp;&nbsp;&nbsp;Typography</option>
-	<option class="menu-item menu-item-type-post_type menu-item-object-page mobile-menu-item-266 mobile-menu-item-depth-1" value="archives/index.html">&nbsp;&nbsp;&nbsp;&nbsp;Archives</option>
-
-<option class="menu-item menu-item-type-post_type menu-item-object-page mobile-menu-item-264 mobile-menu-item-depth-0" value="contact/index.html">Contact</option>
-<option class="menu-item menu-item-type-custom menu-item-object-custom mobile-menu-item-215 mobile-menu-item-depth-0" value="http://themeforest.net/item/base-premium-knowledge-base-wiki-faq-theme/4636112/?ref=themebeans">Purchase</option>
-</select></form></div> 		
+ 	  <div class="menu-footer-container">
+ 	    <form method="get" id="responsive-nav-form" action="http://demo.themebeans.com/base" class="custom">
+ 	      <select id="menu-footer" class="menu dropdown-menu"  onchange="if(this.options[this.selectedIndex].value != &#39;&#39;){window.top.location.href=this.options[this.selectedIndex].value}">
+   	      <option value="" class="blank"> </option>
+   	      <option class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home mobile-menu-item-216 mobile-menu-item-depth-0" value="http://demo.themebeans.com/base">Home</option>
+   	      <option class="menu-item menu-item-type-post_type menu-item-object-page mobile-menu-item-265 mobile-menu-item-depth-0" value="the-blogroll/index.html">Blog</option>
+          <option class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children mobile-menu-item-217 mobile-menu-item-depth-0" value="shortcodes/index.html">Shortcodes</option>	<option class="menu-item menu-item-type-post_type menu-item-object-page mobile-menu-item-268 mobile-menu-item-depth-1" value="buttons/index.html">&nbsp;&nbsp;&nbsp;&nbsp;Buttons</option>
+        	<option class="menu-item menu-item-type-post_type menu-item-object-page mobile-menu-item-267 mobile-menu-item-depth-1" value="feature-area-shortcodes/index.html">&nbsp;&nbsp;&nbsp;&nbsp;Feature Area Shortcodes</option>
+        	<option class="menu-item menu-item-type-post_type menu-item-object-page mobile-menu-item-269 mobile-menu-item-depth-1" value="typography/index.html">&nbsp;&nbsp;&nbsp;&nbsp;Typography</option>
+        	<option class="menu-item menu-item-type-post_type menu-item-object-page mobile-menu-item-266 mobile-menu-item-depth-1" value="archives/index.html">&nbsp;&nbsp;&nbsp;&nbsp;Archives</option>
+          <option class="menu-item menu-item-type-post_type menu-item-object-page mobile-menu-item-264 mobile-menu-item-depth-0" value="contact/index.html">Contact</option>
+          <option class="menu-item menu-item-type-custom menu-item-object-custom mobile-menu-item-215 mobile-menu-item-depth-0" value="http://themeforest.net/item/base-premium-knowledge-base-wiki-faq-theme/4636112/?ref=themebeans">Purchase</option>
+        </select>
+      </form>
+    </div> 		
 	</div><!-- END #responsive-nav --> 	
-
-	  
-		
-		<div class="drop-in-header full">
+  <div class="drop-in-header full">
 			
 			<div class="row">	
 				
@@ -78,7 +75,7 @@
 	  	<a href="http://demo.themebeans.com/base" title="Base" rel="home">
 	
 	 					
-				 <h1 class="logo_text">Base.</h1>
+				 <h1 class="logo_text">codename<strong>LOSTEEZ</strong></h1>
 				 
 	 		 			  
 		</a>
@@ -604,25 +601,16 @@
 				<li>
 				    <a href="#" title="Flickr" class="social-icon flickr"></a>
 				</li>			
-			
-							 	
 				<li>
 				    <a href="#" title="Subscribe via RSS" class="social-icon rss"></a>
 				</li>
-				
-							 	
 				<li>
 				    <a href="http://www.forrst.com/" title="Forrst" class="social-icon forrst"></a>
 				</li>
-							
 								
 		</ul>				
-
-					
 			</div><!-- END .twelve columns -->
-		
 		</div><!-- END .row -->
-	
 	</div><!-- END .footer-btm -->
 
 </footer>
@@ -632,11 +620,7 @@
 <script type='text/javascript' src='wp-content/themes/base/assets/js/customd5f7.js?ver=2.0'></script>
 <script type='text/javascript' src='wp-content/themes/base/assets/js/retinad5f7.js?ver=2.0'></script>
 <script type='text/javascript' src='wp-content/themes/base/assets/js/jquery.validate.min3aa8.js?ver=1.9'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var ajax_var = {"url":"http:\/\/demo.themebeans.com\/base\/wp-admin\/admin-ajax.php","nonce":"46763289ca"};
-/* ]]> */
-</script>
+
 <script type='text/javascript' src='wp-content/themes/base/assets/js/post-likes5152.js?ver=1.0'></script>
 <script type='text/javascript' src='wp-content/plugins/bean-pricingtables/js/bean-pricingtables5152.js?ver=1.0'></script>
 <script type='text/javascript' src='wp-includes/js/jquery/ui/jquery.ui.core.mindb08.js?ver=1.10.3'></script>
@@ -647,6 +631,4 @@ var ajax_var = {"url":"http:\/\/demo.themebeans.com\/base\/wp-admin\/admin-ajax.
 <script type='text/javascript' src='wp-content/plugins/bean-shortcodes/js/prettify5152.js?ver=1.0'></script>
 
 </body>
-
-
 </html>
