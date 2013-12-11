@@ -117,7 +117,7 @@
 	  	<a href="http://demo.themebeans.com/base" title="Base" rel="home">
 	
 	 					
-				 <h1 class="logo_text">Base.</h1>
+				 <h1 class="logo_text">codename<strong>LOSTEEZ</strong></h1>
 				 
 	 		 			  
 		</a>
