@@ -31,13 +31,10 @@ $website = new website;
 	<!-- META TAGS -->
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	
 	<title><?=$website->siteName?> | Lost &amp; Found at its Finest</title>
-	
 	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	
-	<!-- RSS & PINGBACKS -->
-  <link rel='stylesheet' id='bean-css'  href='wp-content/themes/base/assets/css/framework5152.css?ver=1.0' type='text/css' media='all' />
+	<link rel='stylesheet' id='bean-css'  href='wp-content/themes/base/assets/css/framework5152.css?ver=1.0' type='text/css' media='all' />
   <link rel='stylesheet' id='main-style-css'  href='wp-content/themes/base/stylead05.css?ver=1.4' type='text/css' media='all' />
   <link rel='stylesheet' id='mobile-css'  href='wp-content/themes/base/assets/css/mobile5152.css?ver=1.0' type='text/css' media='all' />
   <link rel='stylesheet' id='bean-pricingtables-style-css'  href='wp-content/plugins/bean-pricingtables/css/bean-pricingtables5152.css?ver=1.0' type='text/css' media='all' />
@@ -137,33 +134,19 @@ $website = new website;
 					</nav><!-- END #navigation -->
 				
 				</div><!-- END .ten columns -->
-					
 			</div><!-- END .header-navigation -->
 			
 			<header id="page-header" class="twelve columns">
-			
 				<div class="eleven columns centered">
-					
-					
-<h1 class="animated BeanFadeDown">Welcome,  meet <?=$website->siteName?>.<br>Lost and Found at its Finest.</h1><p>Place a <?=$website->siteName?> QR code on any item, your phone case, on your keys, in your wallet, your coat, your laptops &amp; tablets, need we go on... This stuff is important to you. Now help you're fellow human return it to you!</p>
-<form id="searchform" class="searchform animated BeanBounceUp" method="get" action="http://demo.themebeans.com/base">
-	
-	<input type="text" name="s" class="s" value="Search the knowledgebase..." onfocus="this.value='';" onblur="if(this.value=='')this.value='Search the knowledgebase...';" />
-		
-	<button type="submit" class="button animated BeanButtonShake"><span>Search</span></button>
-	
-</form><!-- END #searchform -->
-
-
-
-
-				
+					<h1 class="animated BeanFadeDown">Welcome,  meet <?=$website->siteName?>.<br>Lost and Found at its Finest.</h1><p>Place a <?=$website->siteName?> QR code on any item, your phone case, on your keys, in your wallet, your coat, your laptops &amp; tablets, need we go on... This stuff is important to you.<br>Now help you're fellow human give it back to you!</p>
+          <form id="searchform" class="searchform animated BeanBounceUp" method="get" action="http://demo.themebeans.com/base">
+          	<input type="text" name="s" class="s" value="Enter QR code number..." onfocus="this.value='';" onblur="if(this.value=='')this.value='Enter QR code number...';" />
+          	<button type="submit" class="button animated BeanButtonShake"><span>Search</span></button>
+          </form><!-- END #searchform -->
 				</div><!-- END .ten columns centered -->
-			
 			</header><!-- END #page-header -->
 			
 		</div><!-- END .row -->
-		
 	</div><!-- END #header-container -->	
 	
 		
