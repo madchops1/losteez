@@ -140,8 +140,8 @@ $website = new website;
 				<div class="eleven columns centered">
 					<h1 class="animated BeanFadeDown">Welcome,  meet <?=$website->siteName?>.<br>Lost and Found at its Finest.</h1><p>Place a <?=$website->siteName?> QR code on any item, your phone case, on your keys, in your wallet, your coat, your laptops &amp; tablets, need we go on... This stuff is important to you.<br>Now help you're fellow human give it back to you!</p>
           <form id="searchform" class="searchform animated BeanBounceUp" method="get" action="">
-          	<input type="text" name="s" class="s" value="Enter <?=$website->siteName?> QR code number..." onfocus="this.value='';" onblur="if(this.value=='')this.value='Enter <?=$website->siteName?> QR code number...';" />
-          	<button type="submit" class="button animated BeanButtonShake"><span>I found it!</span></button>
+          	<input type="text" name="s" class="s" value="Enter QR code number..." onfocus="this.value='';" onblur="if(this.value=='')this.value='Enter QR code number...';" />
+          	<button type="submit" class="button animated BeanButtonShake"><span>Found!</span></button>
           </form><!-- END #searchform -->
 				</div><!-- END .ten columns centered -->
 			</header><!-- END #page-header -->
