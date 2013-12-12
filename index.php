@@ -145,7 +145,7 @@ $website = new website;
 				<div class="eleven columns centered">
 					
 					
-<h1 class="animated BeanFadeDown">Welcome,  meet <?=$website->siteName?>. Lost and Found at its Finest.</h1><p>Place a <?=$website->siteName?> QR code on any item, your phone case, on your keys, in your wallet, your coat, your laptops &amp; tablets, need we go on... This stuff is important to you. Now help you're fellow human return it to you!</p>
+<h1 class="animated BeanFadeDown">Welcome,  meet <?=$website->siteName?>.<br>Lost and Found at its Finest.</h1><p>Place a <?=$website->siteName?> QR code on any item, your phone case, on your keys, in your wallet, your coat, your laptops &amp; tablets, need we go on... This stuff is important to you. Now help you're fellow human return it to you!</p>
 <form id="searchform" class="searchform animated BeanBounceUp" method="get" action="http://demo.themebeans.com/base">
 	
 	<input type="text" name="s" class="s" value="Search the knowledgebase..." onfocus="this.value='';" onblur="if(this.value=='')this.value='Search the knowledgebase...';" />
