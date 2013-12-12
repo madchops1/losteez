@@ -14,7 +14,7 @@ class website{
   
 }
 
-$website = new $website;
+$website = new website;
 
 ?>
 <!DOCTYPE html>
