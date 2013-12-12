@@ -722,7 +722,7 @@ div.wpcf7 img.ajax-loader {
 	float: left;
 	padding: 24px 0px 26px 26px;
 	width: 38%;
-	margin-left:22% !important;
+	margin-left:22%;
 	-webkit-border-radius: 100px;
 	   -moz-border-radius: 100px;
 	        border-radius: 100px;
