@@ -1,7 +1,16 @@
 <?php 
 
+class website{
 
+  var $siteName     = 'lostEEZ';
 
+  
+  
+  
+  
+}
+
+$website = new $website;
 
 ?>
 <!DOCTYPE html>
@@ -19,7 +28,7 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	
-	<title>Base | Just another ThemeBeans Demo Network site</title>
+	<title><?=$website->siteName?> | Lost &amp; Found at its Finest</title>
 	
 	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	
@@ -66,84 +75,59 @@
     </div> 		
 	</div><!-- END #responsive-nav --> 	
   <div class="drop-in-header full">
+	  <div class="row">	
+  		<div class="logo four columns">
+  			<a href="http://demo.themebeans.com/base" title="Base" rel="home">
+	        <h1 class="logo_text">lostEEZ</h1>
+				</a>
+		  </div><!-- END .logo -->
 			
-			<div class="row">	
-				
-				<div class="logo four columns">
-				
-						  	
-	  	<a href="http://demo.themebeans.com/base" title="Base" rel="home">
-	
-	 					
-				 <h1 class="logo_text">codename<strong>LOSTEEZ</strong></h1>
-				 
-	 		 			  
-		</a>
-		
-						
-				</div><!-- END .logo -->
-			
-				<div class="eight columns right">
-				
-					<div class="menu-footer-container"><ul id="menu-footer-1" class="main-menu"><li id="menu-item-216" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-216"><a href="http://demo.themebeans.com/base">Home</a></li>
-<li id="menu-item-265" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-265"><a href="the-blogroll/index.html">Blog</a></li>
-<li id="menu-item-217" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-217"><a href="shortcodes/index.html">Shortcodes</a>
-<ul class="sub-menu">
-	<li id="menu-item-268" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-268"><a href="buttons/index.html">Buttons</a></li>
-	<li id="menu-item-267" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-267"><a href="feature-area-shortcodes/index.html">Feature Area Shortcodes</a></li>
-	<li id="menu-item-269" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-269"><a href="typography/index.html">Typography</a></li>
-	<li id="menu-item-266" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-266"><a href="archives/index.html">Archives</a></li>
-</ul>
-</li>
-<li id="menu-item-264" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-264"><a href="contact/index.html">Contact</a></li>
-<li id="menu-item-215" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-215"><a href="http://themeforest.net/item/base-premium-knowledge-base-wiki-faq-theme/4636112/?ref=themebeans">Purchase</a></li>
-</ul></div>				
-				</div><!-- END .eight columns -->
-				
-			</div><!-- END .row -->
-		
-		</div><!-- END .drop-in-header full -->
-	
+			<div class="eight columns right">
+				<div class="menu-footer-container">
+				  <ul id="menu-footer-1" class="main-menu"><li id="menu-item-216" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-216"><a href="http://demo.themebeans.com/base">Home</a></li>
+            <li id="menu-item-265" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-265"><a href="the-blogroll/index.html">Blog</a></li>
+            <li id="menu-item-217" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-217"><a href="shortcodes/index.html">Shortcodes</a>
+            <ul class="sub-menu">
+            	<li id="menu-item-268" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-268"><a href="buttons/index.html">Buttons</a></li>
+            	<li id="menu-item-267" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-267"><a href="feature-area-shortcodes/index.html">Feature Area Shortcodes</a></li>
+            	<li id="menu-item-269" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-269"><a href="typography/index.html">Typography</a></li>
+            	<li id="menu-item-266" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-266"><a href="archives/index.html">Archives</a></li>
+            </ul>
+            </li>
+            <li id="menu-item-264" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-264"><a href="contact/index.html">Contact</a></li>
+            <li id="menu-item-215" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-215"><a href="http://themeforest.net/item/base-premium-knowledge-base-wiki-faq-theme/4636112/?ref=themebeans">Purchase</a></li>
+          </ul>
+        </div>				
+			</div><!-- END .eight columns -->
+	  </div><!-- END .row -->
+	</div><!-- END .drop-in-header full -->
 	
 	<div id="header-container">
-	
 		<div class="row">		
-				
 			<div class="header-navigation">
-				
 				<div class="logo three columns">
-				
-						  	
-	  	<a href="http://demo.themebeans.com/base" title="Base" rel="home">
-	
-	 					
-				 <h1 class="logo_text">codename<strong>LOSTEEZ</strong></h1>
-				 
-	 		 			  
-		</a>
-		
-						
-				</div><!-- END .logo -->
+	      	<a href="http://demo.themebeans.com/base" title="Base" rel="home"><h1 class="logo_text">lostEEZ</h1></a>
+		    </div><!-- END .logo -->
 			
 				<div class="nine columns hide-for-small">	
-				
-					<nav id="navigation" role="navigation">
-											
+				  <nav id="navigation" role="navigation">
 						<div class="main_menu">
-								
-							<div class="menu-footer-container"><ul id="menu-footer-2" class="main-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-216"><a href="http://demo.themebeans.com/base">Home</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-265"><a href="the-blogroll/index.html">Blog</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-217"><a href="shortcodes/index.html">Shortcodes</a>
-<ul class="sub-menu">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-268"><a href="buttons/index.html">Buttons</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-267"><a href="feature-area-shortcodes/index.html">Feature Area Shortcodes</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-269"><a href="typography/index.html">Typography</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-266"><a href="archives/index.html">Archives</a></li>
-</ul>
-</li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-264"><a href="contact/index.html">Contact</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-215"><a href="http://themeforest.net/item/base-premium-knowledge-base-wiki-faq-theme/4636112/?ref=themebeans">Purchase</a></li>
-</ul></div>							
+							<div class="menu-footer-container">
+							  <ul id="menu-footer-2" class="main-menu">
+							    <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-216"><a href="http://demo.themebeans.com/base">Home</a></li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-265"><a href="the-blogroll/index.html">Blog</a></li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-217"><a href="shortcodes/index.html">Shortcodes</a>
+                    <ul class="sub-menu">
+                    	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-268"><a href="buttons/index.html">Buttons</a></li>
+                    	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-267"><a href="feature-area-shortcodes/index.html">Feature Area Shortcodes</a></li>
+                    	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-269"><a href="typography/index.html">Typography</a></li>
+                    	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-266"><a href="archives/index.html">Archives</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-264"><a href="contact/index.html">Contact</a></li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-215"><a href="http://themeforest.net/item/base-premium-knowledge-base-wiki-faq-theme/4636112/?ref=themebeans">Purchase</a></li>
+                </ul>
+              </div>							
 						</div><!-- END .main_menu -->
 							
 					</nav><!-- END #navigation -->
@@ -157,7 +141,7 @@
 				<div class="eleven columns centered">
 					
 					
-<h1 class="animated BeanFadeDown">Welcome Ladies & Gents.  Meet Base, a Nice New Theme.</h1><p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam quis risus eget urna mollis ornare vel eu leo. Aenean eu leo quam.</p>
+<h1 class="animated BeanFadeDown">Welcome Everyone.  Meet <?=$website->siteName?>, Lost and Found at its Finest.</h1><p>Place a <?=$website->siteName?> QR code on any item, your phone case, on your keys, in your wallet, your coat, your laptops &amp; tablets, need we go on... This stuff is important to you. Now help you're fellow human return it to you!</p>
 <form id="searchform" class="searchform animated BeanBounceUp" method="get" action="http://demo.themebeans.com/base">
 	
 	<input type="text" name="s" class="s" value="Search the knowledgebase..." onfocus="this.value='';" onblur="if(this.value=='')this.value='Search the knowledgebase...';" />
