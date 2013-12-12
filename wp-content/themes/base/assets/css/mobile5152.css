@@ -93,12 +93,12 @@ and (max-width: 767px) {
 	#header-container input[type="text"]:hover,
 	#header-container input[type="text"]:focus {
 		color: #FFF;
-		width: 77%;
+		width: 28%;
 		}	
 		
 	#header-container input[type="text"]:focus {
 		color: #43464A;
-		width: 77%;
+		width: 28%;
 		}		
 	
 	#header-container ::-webkit-input-placeholder { 

@@ -1,18 +1,15 @@
-<?php 
-
+<?php
+session_start();
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 date_default_timezone_set('America/Chicago');
 
-class website{
-
-  var $siteName     = 'lostEEZ';
-
-  
-  
-  
-  
-}
+include 'classes/website.class.php';
+include 'classes/users.class.php';
+include 'classes/user.class.php';
+include 'classes/qr.class.php';
+include 'classes/controller.php';
+include 'classes/view.php';
 
 $website = new website;
 
@@ -43,9 +40,6 @@ $website = new website;
   <script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min1576.js?ver=1.2.1'></script>
   <script type='text/javascript' src='wp-includes/js/comment-reply.minf43b.js?ver=3.7.1'></script>
 
-	
-	
-		
 	<script type="text/javascript">
 		jQuery(document).ready(function($){
 
@@ -61,6 +55,7 @@ $website = new website;
 	
 	
   <style>
+  
   /* ACCENT COLOR */	
   		
   </style>
@@ -78,16 +73,9 @@ $website = new website;
  	  <div class="menu-footer-container">
  	    <form method="get" id="responsive-nav-form" action="http://demo.themebeans.com/base" class="custom">
  	      <select id="menu-footer" class="menu dropdown-menu"  onchange="if(this.options[this.selectedIndex].value != &#39;&#39;){window.top.location.href=this.options[this.selectedIndex].value}">
-   	      <option value="" class="blank"> </option>
-   	      <option class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home mobile-menu-item-216 mobile-menu-item-depth-0" value="http://demo.themebeans.com/base">Home</option>
-   	      <option class="menu-item menu-item-type-post_type menu-item-object-page mobile-menu-item-265 mobile-menu-item-depth-0" value="the-blogroll/index.html">Blog</option>
-          <option class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children mobile-menu-item-217 mobile-menu-item-depth-0" value="shortcodes/index.html">Shortcodes</option>	<option class="menu-item menu-item-type-post_type menu-item-object-page mobile-menu-item-268 mobile-menu-item-depth-1" value="buttons/index.html">&nbsp;&nbsp;&nbsp;&nbsp;Buttons</option>
-        	<option class="menu-item menu-item-type-post_type menu-item-object-page mobile-menu-item-267 mobile-menu-item-depth-1" value="feature-area-shortcodes/index.html">&nbsp;&nbsp;&nbsp;&nbsp;Feature Area Shortcodes</option>
-        	<option class="menu-item menu-item-type-post_type menu-item-object-page mobile-menu-item-269 mobile-menu-item-depth-1" value="typography/index.html">&nbsp;&nbsp;&nbsp;&nbsp;Typography</option>
-        	<option class="menu-item menu-item-type-post_type menu-item-object-page mobile-menu-item-266 mobile-menu-item-depth-1" value="archives/index.html">&nbsp;&nbsp;&nbsp;&nbsp;Archives</option>
-          <option class="menu-item menu-item-type-post_type menu-item-object-page mobile-menu-item-264 mobile-menu-item-depth-0" value="contact/index.html">Contact</option>
-          <option class="menu-item menu-item-type-custom menu-item-object-custom mobile-menu-item-215 mobile-menu-item-depth-0" value="http://themeforest.net/item/base-premium-knowledge-base-wiki-faq-theme/4636112/?ref=themebeans">Purchase</option>
-        </select>
+   	    <?=$website->responsiveNav?>
+   	    
+   	    </select>
       </form>
     </div> 		
 	</div><!-- END #responsive-nav --> 	
@@ -429,38 +417,30 @@ $website = new website;
 				    <a title='Dribbble' href='#'><li class='bean_social_icon bean_social-dribbble'></li></a><a title='Mail' href='#'><li class='bean_social_icon bean_social-mail'></li></a><a title='Instagram' href='#'><li class='bean_social_icon bean_social-instagram'></li></a><a title='Pinterest' href='#'><li class='bean_social_icon bean_social-pinterest'></li></a><a title='Vimeo' href='#'><li class='bean_social_icon bean_social-vimeo'></li></a><a title='Evernote' href='#'><li class='bean_social_icon bean_social-evernote'></li></a><a title='MySpace' href='#'><li class='bean_social_icon bean_social-myspace'></li></a><a title='LinkedIn' href='#'><li class='bean_social_icon bean_social-linkedin'></li></a><a title='Forrest' href='#'><li class='bean_social_icon bean_social-forrest'></li></a><a title='PayPal' href='#'><li class='bean_social_icon bean_social-paypal'></li></a><a title='Google Plus' href='#'><li class='bean_social_icon bean_social-googleplus'></li></a><a title='Spotify' href='#'><li class='bean_social_icon bean_social-spotify'></li></a><a title='Behance' href='#'><li class='bean_social_icon bean_social-behance'></li></a><a title='RSS' href='#'><li class='bean_social_icon bean_social-rss'></li></a><a title='Dropbox' href='#'><li class='bean_social_icon bean_social-dropbox'></li></a><a title='Soundcloud' href='#'><li class='bean_social_icon bean_social-soundcloud'></li></a><a title='Rdio' href='#'><li class='bean_social_icon bean_social-rdio'></li></a><a title='deviantART' href='#'><li class='bean_social_icon bean_social-deviantart'></li></a><a title='Skype' href='#'><li class='bean_social_icon bean_social-skype'></li></a><a title='Zerply' href='#'><li class='bean_social_icon bean_social-zerply'></li></a><a title='Picasa' href='#'><li class='bean_social_icon bean_social-picasa'></li></a><a title='500px' href='#'><li class='bean_social_icon bean_social-500px'></li></a><a title='YouTube' href='#'><li class='bean_social_icon bean_social-youtube'></li></a><a title='Steam' href='#'><li class='bean_social_icon bean_social-steam'></li></a><a title='Reddit' href='#'><li class='bean_social_icon bean_social-reddit'></li></a>
 				  </ul> -->
 				</div>
+				
 				<div class="widget widget_bean_newsletter clearfix"> 
+  		
+  	      <h3 class="widget-title"><span>Newsletter.</span></h3>	
+  		    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna.</p>	
+  		    
+  		    <form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
 		
-	<h3 class="widget-title"><span>Newsletter.</span></h3>	
-		<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna.</p>	
-		<form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+			    <input type="email" name="EMAIL" class="email-newsletter" id="mce-EMAIL" value="Enter your email..." required="" onfocus="this.value='';" onblur="if(this.value=='')this.value='Enter your email...';">
+					<input type="submit" value="Subscribe" class="base-button animated BeanButtonShake ">
 		
-			<input type="email" name="EMAIL" class="email-newsletter" id="mce-EMAIL" value="Enter your email..." required="" onfocus="this.value='';" onblur="if(this.value=='')this.value='Enter your email...';">
-			
-			<input type="submit" value="Subscribe" class="base-button animated BeanButtonShake ">
-		
-		</form><!-- END .form -->
-	
-	</div>			
-			</aside><!-- END #sidebar -->
-		
-			
-	</div><!-- END .row -->
-
-</div><!-- END #main-container -->
+		      </form><!-- END .form -->
+	      </div>			
+	    </aside><!-- END #sidebar -->
+	  </div><!-- END .row -->
+  </div><!-- END #main-container -->
 
 
 	<div class="home-widgets-featured btm no-footer twelve animated BeanFadeIn">
-	
 		<div class="row">
-		
 			<div class="twelve">
-			
 							
 			</div><!-- END .twelve columns -->
-		
 		</div><!-- END .row -->
-	
 	</div><!-- END .home-widgets-featured -->
 
  
@@ -469,14 +449,8 @@ $website = new website;
 
 
 <footer class="animated BeanFadeIn">
-
-		
-		 
-							
 	<div class="footer-btm">
-	
 		<div class="row">
-		
 			<div class="twelve columns">
 			
 				<ul id="menu-footer-3" class="footer-navigation"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-216"><a href="http://demo.themebeans.com/base">Home</a><span class="nav-sep">&middot;</span></li>
@@ -487,7 +461,7 @@ $website = new website;
         </ul>			
 						
 		    <div class="copyright">
-			    Copyright © <?=date('Y') ?> <a href=""><?=$website->siteName?></a>. Powered by <a href="http://webksd.com">KSD</a>. 
+			    Copyright &copy; <?=date('Y') ?> <a href=""><?=$website->siteName?></a>. Powered by <a href="http://webksd.com">KSD</a>. 
 		    </div>
 		    <!--END .colophon-->
 				
