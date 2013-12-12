@@ -1,5 +1,9 @@
 <?php 
 
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+date_default_timezone_set('America/Chicago');
+
 class website{
 
   var $siteName     = 'lostEEZ';
@@ -78,7 +82,7 @@ $website = new $website;
 	  <div class="row">	
   		<div class="logo four columns">
   			<a href="http://demo.themebeans.com/base" title="Base" rel="home">
-	        <h1 class="logo_text">lostEEZ</h1>
+	        <h1 class="logo_text"><?=$website->siteName?></h1>
 				</a>
 		  </div><!-- END .logo -->
 			
