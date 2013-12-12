@@ -94,7 +94,7 @@ $website = new website;
   <div class="drop-in-header full">
 	  <div class="row">	
   		<div class="logo four columns">
-  			<a href="http://demo.themebeans.com/base" title="Base" rel="home">
+  			<a href="/" title="Base" rel="home">
 	        <h1 class="logo_text"><?=$website->siteName?></h1>
 				</a>
 		  </div><!-- END .logo -->
@@ -125,32 +125,22 @@ $website = new website;
 				<div class="logo three columns">
 	      	<a href="http://demo.themebeans.com/base" title="Base" rel="home"><h1 class="logo_text">lostEEZ</h1></a>
 		    </div><!-- END .logo -->
-			
 				<div class="nine columns hide-for-small">	
 				  <nav id="navigation" role="navigation">
 						<div class="main_menu">
 							<div class="menu-footer-container">
 							  <ul id="menu-footer-2" class="main-menu">
-							    <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-216"><a href="http://demo.themebeans.com/base">Home</a></li>
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-265"><a href="the-blogroll/index.html">Blog</a></li>
-                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-217"><a href="shortcodes/index.html">Shortcodes</a>
-                    <ul class="sub-menu">
-                    	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-268"><a href="buttons/index.html">Buttons</a></li>
-                    	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-267"><a href="feature-area-shortcodes/index.html">Feature Area Shortcodes</a></li>
-                    	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-269"><a href="typography/index.html">Typography</a></li>
-                    	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-266"><a href="archives/index.html">Archives</a></li>
-                    </ul>
-                  </li>
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-264"><a href="contact/index.html">Contact</a></li>
-                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-215"><a href="http://themeforest.net/item/base-premium-knowledge-base-wiki-faq-theme/4636112/?ref=themebeans">Purchase</a></li>
+							    <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-216"><a href="/">Home</a></li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-265"><a href="/about">About</a></li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-264"><a href="/register">Register</a></li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-264"><a href="/found">Found <?=$website->siteName?></a></li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-215"><a href="/contact">Contact</a></li>
                 </ul>
               </div>							
-						</div><!-- END .main_menu -->
-							
-					</nav><!-- END #navigation -->
-				
-				</div><!-- END .ten columns -->
-			</div><!-- END .header-navigation -->
+						</div>
+					</nav>
+				</div>
+			</div>
 			
 			<header id="page-header" class="twelve columns">
 				<div class="eleven columns centered">
@@ -490,96 +480,94 @@ $website = new website;
 			<div class="twelve columns">
 			
 				<ul id="menu-footer-3" class="footer-navigation"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-216"><a href="http://demo.themebeans.com/base">Home</a><span class="nav-sep">&middot;</span></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-265"><a href="the-blogroll/index.html">Blog</a><span class="nav-sep">&middot;</span></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-217"><a href="shortcodes/index.html">Shortcodes</a><span class="nav-sep">&middot;</span></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-264"><a href="contact/index.html">Contact</a><span class="nav-sep">&middot;</span></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-215"><a href="http://themeforest.net/item/base-premium-knowledge-base-wiki-faq-theme/4636112/?ref=themebeans">Purchase</a><span class="nav-sep">&middot;</span></li>
-</ul>			
+          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-265"><a href="the-blogroll/index.html">Blog</a><span class="nav-sep">&middot;</span></li>
+          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-217"><a href="shortcodes/index.html">Shortcodes</a><span class="nav-sep">&middot;</span></li>
+          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-264"><a href="contact/index.html">Contact</a><span class="nav-sep">&middot;</span></li>
+          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-215"><a href="http://themeforest.net/item/base-premium-knowledge-base-wiki-faq-theme/4636112/?ref=themebeans">Purchase</a><span class="nav-sep">&middot;</span></li>
+        </ul>			
 						
 		    <div class="copyright">
-			
-			    Copyright © 2013 <a href="http://themeforest.net/user/ThemeBeans/?ref=themebeans">Base Theme</a>. Powered by <a href="www.wordpress.html">WordPress</a>. 
-
-		    </div> <!--END .colophon-->
+			    Copyright © <?=date('Y') ?> <a href=""><?=$website->siteName?></a>. Powered by <a href="http://webksd.com">KSD</a>. 
+		    </div>
+		    <!--END .colophon-->
 				
 					
-  					
+  					<!-- 
   		  <ul class="social-foot">
-  									
-  				
-  				
   							 	
   				<li>
-  				    <a href="http://www.twitter.com/ThemeBeans" title="Twitter" class="social-icon twitter"></a>
+  				    <a href="" title="Twitter" class="social-icon twitter"></a>
   				</li>
   				
   							 	
   				<li>
-  				    <a href="ThemeBeans.html" title="Facebook" class="social-icon facebook"></a>
+  				    <a href="" title="Facebook" class="social-icon facebook"></a>
   				</li>
   				
   							 	
   				<li>
-  				    <a href="http://www.dribbble.com/ThemeBeans" title="Dribbble" class="social-icon dribbble"></a>
+  				    <a href=" title="Dribbble" class="social-icon dribbble"></a>
   				</li>
   			
   							 	
   				<li>
-  				    <a href="http://www.instagram.com/" title="Instagram" class="social-icon instagram"></a>
+  				    <a href="" title="Instagram" class="social-icon instagram"></a>
   				</li>
   			
   							 	
   				<li>
-  				    <a href="#" title="Google Plus" class="social-icon googleplus"></a>
+  				    <a href="" title="Google Plus" class="social-icon googleplus"></a>
   				</li>
   			
   							 	
   				<li>
-  				    <a href="#" title="Linkedin" class="social-icon linkedin"></a>
+  				    <a href="" title="Linkedin" class="social-icon linkedin"></a>
   				</li>	
   			
   							 	
   				<li>
-  				    <a href="http://zerply.com/" title="Zerply" class="social-icon zerply"></a>
+  				    <a href="" title="Zerply" class="social-icon zerply"></a>
   				</li>			
   			
   							 	
   				<li>
-  				    <a href="http://www.behance.net/" title="Behance" class="social-icon behance"></a>
+  				    <a href="" title="Behance" class="social-icon behance"></a>
   				</li>	
   			
   							 	
   				<li>
-  				    <a href="http://pinterest.com/" title="Pinterst" class="social-icon pinterest"></a>
+  				    <a href="" title="Pinterst" class="social-icon pinterest"></a>
   				</li>	
   				
   							 	
   				<li>
-  				    <a href="#" title="GitHub" class="social-icon github"></a>
+  				    <a href="" title="GitHub" class="social-icon github"></a>
   				</li>		
   			
   							 	
   				<li>
-  				    <a href="#" title="YouTube" class="social-icon youtube"></a>
+  				    <a href="" title="YouTube" class="social-icon youtube"></a>
   				</li>
   			
   							 	
   				<li>
-  				    <a href="mailto:hello@themebeans.com" title="Email Us" class="social-icon email"></a>
+  				    <a href="" title="Email Us" class="social-icon email"></a>
   				</li>			
   			
   							 	
   				<li>
-  				    <a href="#" title="Flickr" class="social-icon flickr"></a>
+  				    <a href="" title="Flickr" class="social-icon flickr"></a>
   				</li>			
   				<li>
-  				    <a href="#" title="Subscribe via RSS" class="social-icon rss"></a>
+  				    <a href="" title="Subscribe via RSS" class="social-icon rss"></a>
   				</li>
   				<li>
-  				    <a href="http://www.forrst.com/" title="Forrst" class="social-icon forrst"></a>
+  				    <a href="" title="Forrst" class="social-icon forrst"></a>
   				</li>
     								
   		    </ul>				
+  		    -->
+  		    
   			</div><!-- END .twelve columns -->
   		</div><!-- END .row -->
   	</div><!-- END .footer-btm -->
