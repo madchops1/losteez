@@ -140,8 +140,8 @@ $website = new website;
 				<div class="eleven columns centered">
 					<h1 class="animated BeanFadeDown">Welcome,  meet <?=$website->siteName?>.<br>Lost and Found at its Finest.</h1><p>Place a <?=$website->siteName?> QR code on any item, your phone case, on your keys, in your wallet, your coat, your laptops &amp; tablets, need we go on... This stuff is important to you.<br>Now help you're fellow human give it back to you!</p>
           <form id="searchform" class="searchform animated BeanBounceUp" method="get" action="">
-          	<input type="text" name="s" class="s" value="Enter QR code number..." onfocus="this.value='';" onblur="if(this.value=='')this.value='Enter QR code number...';" />
-          	<button type="submit" class="button animated BeanButtonShake"><span>Search</span></button>
+          	<input type="text" name="s" class="s" value="Enter <?=$website->siteName?> QR code number..." onfocus="this.value='';" onblur="if(this.value=='')this.value='Enter <?=$website->siteName?> QR code number...';" />
+          	<button type="submit" class="button animated BeanButtonShake"><span>I found this <?=$website->siteName?>!</span></button>
           </form><!-- END #searchform -->
 				</div><!-- END .ten columns centered -->
 			</header><!-- END #page-header -->
@@ -149,61 +149,51 @@ $website = new website;
 		</div><!-- END .row -->
 	</div><!-- END #header-container -->	
 	
-		
-
-
-  
-	
 	<div class="home-widgets-featured twelve animated BeanFadeIn">
-	
 		<div class="row">
-		
 			<div class="twelve">
-			
 				<div class="widget widget_bean_feature_area clearfix"> 
-	
 		
-		<div class="bean-panel animated BeanFadeIn hover four columns mobile-four">
-		
-			<div class="front">
-			
-				<div class="feature-icon Cog">				
-				<style scoped>.feature-icon { background-color:#97D798; }</style>
-				
-				</div>
-			
-				<h2>Feature Area 1</h2>
-			
-				<p>Maecenas sed diam eget risus varius blandit sit amet.</p>
-			
-			</div><!-- END .front -->
-			
-						
-				<div class="back twelve columns">
-				
-					<h5>More Info</h5>
-				
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dsed consecteturs.</p>
-				
-										
-						<a href="#" class="base-button">Click Here</a>
-				
-										
-				</div><!-- END .back -->
-		
-						
-		</div><!--END .bean-panel hover four columns-->
-		
-		
+      		<div class="bean-panel animated BeanFadeIn hover six columns mobile-six">
+      			<div class="front">
+      			
+      				<div class="feature-icon Check">				
+      				<style scoped>.feature-icon { background-color:#97D798; }</style>
+      				
+      				</div>
+      			
+      				<h2>Feature Area 1</h2>
+      			
+      				<p>Maecenas sed diam eget risus varius blandit sit amet.</p>
+      			
+      			</div><!-- END .front -->
+      			
+      						
+      				<div class="back twelve columns">
+      				
+      					<h5>More Info</h5>
+      				
+      					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dsed consecteturs.</p>
+      				
+      										
+      						<a href="#" class="base-button">Click Here</a>
+      				
+      										
+      				</div><!-- END .back -->
+      		
+      						
+      		</div><!--END .bean-panel hover four columns-->
+      		
+      		
 	
 
 	
 		
-		<div class="bean-panel animated BeanFadeIn hover four columns mobile-four">
+		<div class="bean-panel animated BeanFadeIn hover six columns mobile-six">
 		
 			<div class="front">
 			
-				<div class="feature-icon Check"></div>
+				<div class="feature-icon Compass"></div>
 			
 				<h2>Feature Area 2</h2>
 			
@@ -231,7 +221,7 @@ $website = new website;
 	
 		
 		
-		
+		<!-- 
 		<div class="bean-panel animated BeanFadeIn hover four columns mobile-four">
 		
 			<div class="front">
@@ -242,7 +232,7 @@ $website = new website;
 			
 				<p>Maecenas sed diam eget risus varius blandit sit amet.</p>
 			
-			</div><!-- END .front -->
+			</div>
 			
 						
 				<div class="back twelve columns">
@@ -255,10 +245,11 @@ $website = new website;
 						<a href="#" class="base-button">Click Here</a>
 				
 										
-				</div><!-- END .back -->
+				</div>
 		
 						
-		</div><!--END .bean-panel hover four columns-->
+		</div>
+		-->
 		
 				
 
