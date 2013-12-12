@@ -44,6 +44,22 @@ $website = new website;
   <script type='text/javascript' src='wp-includes/js/comment-reply.minf43b.js?ver=3.7.1'></script>
 
 	
+	
+		
+	<script type="text/javascript">
+		jQuery(document).ready(function($){
+
+			// flip boxes
+			$('.hover').hover(function(){
+				$(this).addClass('flip');
+			},function(){
+				$(this).removeClass('flip');
+			});	
+						
+		});
+	</script>
+	
+	
   <style>
   /* ACCENT COLOR */	
   		
@@ -174,11 +190,7 @@ $website = new website;
       					<h5>More Info</h5>
       				
       					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dsed consecteturs.</p>
-      				
-      										
-      						<a href="#" class="base-button">Register a <?=$website->siteName?></a>
-      				
-      										
+      					<a href="#" class="base-button">Register a <?=$website->siteName?></a>
       				</div><!-- END .back -->
       		
       						
@@ -253,19 +265,6 @@ $website = new website;
 		
 				
 
-		
-	<script type="text/javascript">
-		jQuery(document).ready(function($){
-		
-			$('.hover').hover(function(){
-				$(this).addClass('flip');
-			},function(){
-				$(this).removeClass('flip');
-			});	
-						
-		});
-	</script>
-	
 	
 	</div>				
 			</div><!-- END .twelve columns -->
@@ -279,20 +278,22 @@ $website = new website;
 <div id="main-container" class="twelve animated BeanFadeIn"> 
 	
 	<div class="row">
-	
 		<div class="seven columns clearfix" role="main">
-			
-			
-<section id="post-13" class="post-13 page type-page status-publish hentry">	
-		
-	<div class="entry-content">
-	
-		<h5>Welcome to Base!</h5>
-<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod!</p>
-
-	</div><!-- END .entry-content -->
- 	
-</section><!-- END #post-13 -->
+			<section id="post-13" class="post-13 page type-page status-publish hentry">	
+      	<div class="entry-content">
+      		<h5>Welcome to <?=$website->siteName?>!</h5>
+          <p>
+            The idea behind our lost &amp; found system is simple. 
+            Stick a <?=$website->siteName?> on anything. 
+            If you lose that item, and it is found by some greedy 
+            fellow out there. You can offer them a reward to return 
+            your item. The QR code is accompanied by a message informing 
+            the finder of the reward. Providing a hefty incentive, and an 
+            easy way to return your lost phone, or keys. <?=$website->siteName?> 
+            is free pay nothing until you get your item back!.
+          </p>
+      	</div><!-- END .entry-content -->
+      </section><!-- END #post-13 -->
 		
 			<div class="home-widgets">
 			
@@ -430,7 +431,15 @@ $website = new website;
 				
 			<aside class="sidebar five columns sidebar-right hide-for-small" role="complementary">
 				
-				<div class="widget widget_bean_social clearfix"><h3 class="widget-title"><span>Bean Social.</span></h3><ul class='bean_social_icons'><a title='Twitter' href='#'><li class='bean_social_icon bean_social-twitter'></li></a><a title='Facebook' href='#'><li class='bean_social_icon bean_social-facebook'></li></a><a title='Dribbble' href='#'><li class='bean_social_icon bean_social-dribbble'></li></a><a title='Mail' href='#'><li class='bean_social_icon bean_social-mail'></li></a><a title='Instagram' href='#'><li class='bean_social_icon bean_social-instagram'></li></a><a title='Pinterest' href='#'><li class='bean_social_icon bean_social-pinterest'></li></a><a title='Vimeo' href='#'><li class='bean_social_icon bean_social-vimeo'></li></a><a title='Evernote' href='#'><li class='bean_social_icon bean_social-evernote'></li></a><a title='MySpace' href='#'><li class='bean_social_icon bean_social-myspace'></li></a><a title='LinkedIn' href='#'><li class='bean_social_icon bean_social-linkedin'></li></a><a title='Forrest' href='#'><li class='bean_social_icon bean_social-forrest'></li></a><a title='PayPal' href='#'><li class='bean_social_icon bean_social-paypal'></li></a><a title='Google Plus' href='#'><li class='bean_social_icon bean_social-googleplus'></li></a><a title='Spotify' href='#'><li class='bean_social_icon bean_social-spotify'></li></a><a title='Behance' href='#'><li class='bean_social_icon bean_social-behance'></li></a><a title='RSS' href='#'><li class='bean_social_icon bean_social-rss'></li></a><a title='Dropbox' href='#'><li class='bean_social_icon bean_social-dropbox'></li></a><a title='Soundcloud' href='#'><li class='bean_social_icon bean_social-soundcloud'></li></a><a title='Rdio' href='#'><li class='bean_social_icon bean_social-rdio'></li></a><a title='deviantART' href='#'><li class='bean_social_icon bean_social-deviantart'></li></a><a title='Skype' href='#'><li class='bean_social_icon bean_social-skype'></li></a><a title='Zerply' href='#'><li class='bean_social_icon bean_social-zerply'></li></a><a title='Picasa' href='#'><li class='bean_social_icon bean_social-picasa'></li></a><a title='500px' href='#'><li class='bean_social_icon bean_social-500px'></li></a><a title='YouTube' href='#'><li class='bean_social_icon bean_social-youtube'></li></a><a title='Steam' href='#'><li class='bean_social_icon bean_social-steam'></li></a><a title='Reddit' href='#'><li class='bean_social_icon bean_social-reddit'></li></a></ul></div><div class="widget widget_bean_newsletter clearfix"> 
+				<div class="widget widget_bean_social clearfix">
+				  <h3 class="widget-title"><span>We're in Chicago!</span></h3>
+				  <!-- <ul class='bean_social_icons'>
+				    <a title='Twitter' href='#'><li class='bean_social_icon bean_social-twitter'></li></a>
+				    <a title='Facebook' href='#'><li class='bean_social_icon bean_social-facebook'></li></a>
+				    <a title='Dribbble' href='#'><li class='bean_social_icon bean_social-dribbble'></li></a><a title='Mail' href='#'><li class='bean_social_icon bean_social-mail'></li></a><a title='Instagram' href='#'><li class='bean_social_icon bean_social-instagram'></li></a><a title='Pinterest' href='#'><li class='bean_social_icon bean_social-pinterest'></li></a><a title='Vimeo' href='#'><li class='bean_social_icon bean_social-vimeo'></li></a><a title='Evernote' href='#'><li class='bean_social_icon bean_social-evernote'></li></a><a title='MySpace' href='#'><li class='bean_social_icon bean_social-myspace'></li></a><a title='LinkedIn' href='#'><li class='bean_social_icon bean_social-linkedin'></li></a><a title='Forrest' href='#'><li class='bean_social_icon bean_social-forrest'></li></a><a title='PayPal' href='#'><li class='bean_social_icon bean_social-paypal'></li></a><a title='Google Plus' href='#'><li class='bean_social_icon bean_social-googleplus'></li></a><a title='Spotify' href='#'><li class='bean_social_icon bean_social-spotify'></li></a><a title='Behance' href='#'><li class='bean_social_icon bean_social-behance'></li></a><a title='RSS' href='#'><li class='bean_social_icon bean_social-rss'></li></a><a title='Dropbox' href='#'><li class='bean_social_icon bean_social-dropbox'></li></a><a title='Soundcloud' href='#'><li class='bean_social_icon bean_social-soundcloud'></li></a><a title='Rdio' href='#'><li class='bean_social_icon bean_social-rdio'></li></a><a title='deviantART' href='#'><li class='bean_social_icon bean_social-deviantart'></li></a><a title='Skype' href='#'><li class='bean_social_icon bean_social-skype'></li></a><a title='Zerply' href='#'><li class='bean_social_icon bean_social-zerply'></li></a><a title='Picasa' href='#'><li class='bean_social_icon bean_social-picasa'></li></a><a title='500px' href='#'><li class='bean_social_icon bean_social-500px'></li></a><a title='YouTube' href='#'><li class='bean_social_icon bean_social-youtube'></li></a><a title='Steam' href='#'><li class='bean_social_icon bean_social-steam'></li></a><a title='Reddit' href='#'><li class='bean_social_icon bean_social-reddit'></li></a>
+				  </ul> -->
+				</div>
+				<div class="widget widget_bean_newsletter clearfix"> 
 		
 	<h3 class="widget-title"><span>Newsletter.</span></h3>	
 		<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna.</p>	
@@ -487,110 +496,110 @@ $website = new website;
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-215"><a href="http://themeforest.net/item/base-premium-knowledge-base-wiki-faq-theme/4636112/?ref=themebeans">Purchase</a><span class="nav-sep">&middot;</span></li>
 </ul>			
 						
-		<div class="copyright">
+		    <div class="copyright">
 			
-			Copyright © 2013 <a href="http://themeforest.net/user/ThemeBeans/?ref=themebeans">Base Theme</a>. Powered by <a href="www.wordpress.html">WordPress</a>. 
+			    Copyright © 2013 <a href="http://themeforest.net/user/ThemeBeans/?ref=themebeans">Base Theme</a>. Powered by <a href="www.wordpress.html">WordPress</a>. 
 
-		</div> <!--END .colophon-->
+		    </div> <!--END .colophon-->
 				
 					
-					
-		<ul class="social-foot">
-									
-				
-				
-							 	
-				<li>
-				    <a href="http://www.twitter.com/ThemeBeans" title="Twitter" class="social-icon twitter"></a>
-				</li>
-				
-							 	
-				<li>
-				    <a href="ThemeBeans.html" title="Facebook" class="social-icon facebook"></a>
-				</li>
-				
-							 	
-				<li>
-				    <a href="http://www.dribbble.com/ThemeBeans" title="Dribbble" class="social-icon dribbble"></a>
-				</li>
-			
-							 	
-				<li>
-				    <a href="http://www.instagram.com/" title="Instagram" class="social-icon instagram"></a>
-				</li>
-			
-							 	
-				<li>
-				    <a href="#" title="Google Plus" class="social-icon googleplus"></a>
-				</li>
-			
-							 	
-				<li>
-				    <a href="#" title="Linkedin" class="social-icon linkedin"></a>
-				</li>	
-			
-							 	
-				<li>
-				    <a href="http://zerply.com/" title="Zerply" class="social-icon zerply"></a>
-				</li>			
-			
-							 	
-				<li>
-				    <a href="http://www.behance.net/" title="Behance" class="social-icon behance"></a>
-				</li>	
-			
-							 	
-				<li>
-				    <a href="http://pinterest.com/" title="Pinterst" class="social-icon pinterest"></a>
-				</li>	
-				
-							 	
-				<li>
-				    <a href="#" title="GitHub" class="social-icon github"></a>
-				</li>		
-			
-							 	
-				<li>
-				    <a href="#" title="YouTube" class="social-icon youtube"></a>
-				</li>
-			
-							 	
-				<li>
-				    <a href="mailto:hello@themebeans.com" title="Email Us" class="social-icon email"></a>
-				</li>			
-			
-							 	
-				<li>
-				    <a href="#" title="Flickr" class="social-icon flickr"></a>
-				</li>			
-				<li>
-				    <a href="#" title="Subscribe via RSS" class="social-icon rss"></a>
-				</li>
-				<li>
-				    <a href="http://www.forrst.com/" title="Forrst" class="social-icon forrst"></a>
-				</li>
-								
-		</ul>				
-			</div><!-- END .twelve columns -->
-		</div><!-- END .row -->
-	</div><!-- END .footer-btm -->
+  					
+  		  <ul class="social-foot">
+  									
+  				
+  				
+  							 	
+  				<li>
+  				    <a href="http://www.twitter.com/ThemeBeans" title="Twitter" class="social-icon twitter"></a>
+  				</li>
+  				
+  							 	
+  				<li>
+  				    <a href="ThemeBeans.html" title="Facebook" class="social-icon facebook"></a>
+  				</li>
+  				
+  							 	
+  				<li>
+  				    <a href="http://www.dribbble.com/ThemeBeans" title="Dribbble" class="social-icon dribbble"></a>
+  				</li>
+  			
+  							 	
+  				<li>
+  				    <a href="http://www.instagram.com/" title="Instagram" class="social-icon instagram"></a>
+  				</li>
+  			
+  							 	
+  				<li>
+  				    <a href="#" title="Google Plus" class="social-icon googleplus"></a>
+  				</li>
+  			
+  							 	
+  				<li>
+  				    <a href="#" title="Linkedin" class="social-icon linkedin"></a>
+  				</li>	
+  			
+  							 	
+  				<li>
+  				    <a href="http://zerply.com/" title="Zerply" class="social-icon zerply"></a>
+  				</li>			
+  			
+  							 	
+  				<li>
+  				    <a href="http://www.behance.net/" title="Behance" class="social-icon behance"></a>
+  				</li>	
+  			
+  							 	
+  				<li>
+  				    <a href="http://pinterest.com/" title="Pinterst" class="social-icon pinterest"></a>
+  				</li>	
+  				
+  							 	
+  				<li>
+  				    <a href="#" title="GitHub" class="social-icon github"></a>
+  				</li>		
+  			
+  							 	
+  				<li>
+  				    <a href="#" title="YouTube" class="social-icon youtube"></a>
+  				</li>
+  			
+  							 	
+  				<li>
+  				    <a href="mailto:hello@themebeans.com" title="Email Us" class="social-icon email"></a>
+  				</li>			
+  			
+  							 	
+  				<li>
+  				    <a href="#" title="Flickr" class="social-icon flickr"></a>
+  				</li>			
+  				<li>
+  				    <a href="#" title="Subscribe via RSS" class="social-icon rss"></a>
+  				</li>
+  				<li>
+  				    <a href="http://www.forrst.com/" title="Forrst" class="social-icon forrst"></a>
+  				</li>
+    								
+  		    </ul>				
+  			</div><!-- END .twelve columns -->
+  		</div><!-- END .row -->
+  	</div><!-- END .footer-btm -->
 
-</footer>
- 	
-<link rel='stylesheet' id='bean-social-style-css'  href='wp-content/plugins/bean-social/css/bean-social5152.css?ver=1.0' type='text/css' media='all' />
-<script type='text/javascript' src='wp-content/themes/base/assets/js/custom-libraries5152.js?ver=1.0'></script>
-<script type='text/javascript' src='wp-content/themes/base/assets/js/customd5f7.js?ver=2.0'></script>
-<script type='text/javascript' src='wp-content/themes/base/assets/js/retinad5f7.js?ver=2.0'></script>
-<script type='text/javascript' src='wp-content/themes/base/assets/js/jquery.validate.min3aa8.js?ver=1.9'></script>
-
-<script type='text/javascript' src='wp-content/themes/base/assets/js/post-likes5152.js?ver=1.0'></script>
-<script type='text/javascript' src='wp-content/plugins/bean-pricingtables/js/bean-pricingtables5152.js?ver=1.0'></script>
-<script type='text/javascript' src='wp-includes/js/jquery/ui/jquery.ui.core.mindb08.js?ver=1.10.3'></script>
-<script type='text/javascript' src='wp-includes/js/jquery/ui/jquery.ui.widget.mindb08.js?ver=1.10.3'></script>
-<script type='text/javascript' src='wp-includes/js/jquery/ui/jquery.ui.accordion.mindb08.js?ver=1.10.3'></script>
-<script type='text/javascript' src='wp-includes/js/jquery/ui/jquery.ui.tabs.mindb08.js?ver=1.10.3'></script>
-<script type='text/javascript' src='wp-content/plugins/bean-shortcodes/js/bean-shortcodes5152.js?ver=1.0'></script>
-<script type='text/javascript' src='wp-content/plugins/bean-shortcodes/js/prettify5152.js?ver=1.0'></script>
+  </footer>
+   	
+  <link rel='stylesheet' id='bean-social-style-css'  href='wp-content/plugins/bean-social/css/bean-social5152.css?ver=1.0' type='text/css' media='all' />
+  <script type='text/javascript' src='wp-content/themes/base/assets/js/custom-libraries5152.js?ver=1.0'></script>
+  <script type='text/javascript' src='wp-content/themes/base/assets/js/customd5f7.js?ver=2.0'></script>
+  <script type='text/javascript' src='wp-content/themes/base/assets/js/retinad5f7.js?ver=2.0'></script>
+  <script type='text/javascript' src='wp-content/themes/base/assets/js/jquery.validate.min3aa8.js?ver=1.9'></script>
+  
+  <script type='text/javascript' src='wp-content/themes/base/assets/js/post-likes5152.js?ver=1.0'></script>
+  <script type='text/javascript' src='wp-content/plugins/bean-pricingtables/js/bean-pricingtables5152.js?ver=1.0'></script>
+  <script type='text/javascript' src='wp-includes/js/jquery/ui/jquery.ui.core.mindb08.js?ver=1.10.3'></script>
+  <script type='text/javascript' src='wp-includes/js/jquery/ui/jquery.ui.widget.mindb08.js?ver=1.10.3'></script>
+  <script type='text/javascript' src='wp-includes/js/jquery/ui/jquery.ui.accordion.mindb08.js?ver=1.10.3'></script>
+  <script type='text/javascript' src='wp-includes/js/jquery/ui/jquery.ui.tabs.mindb08.js?ver=1.10.3'></script>
+  <script type='text/javascript' src='wp-content/plugins/bean-shortcodes/js/bean-shortcodes5152.js?ver=1.0'></script>
+  <script type='text/javascript' src='wp-content/plugins/bean-shortcodes/js/prettify5152.js?ver=1.0'></script>
 
 </body>
 </html>
